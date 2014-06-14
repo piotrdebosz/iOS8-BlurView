@@ -12,6 +12,7 @@
 		AF367220194A6F5A00F6112A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF36721E194A6F5A00F6112A /* Main.storyboard */; };
 		AF367222194A6F5A00F6112A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF367221194A6F5A00F6112A /* Images.xcassets */; };
 		AF36722E194A6F5A00F6112A /* BlurEffectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF36722D194A6F5A00F6112A /* BlurEffectTests.swift */; };
+		AF771D7E194CCA5200953EE2 /* ObjcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF771D7D194CCA5200953EE2 /* ObjcViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,8 @@
 		AF367227194A6F5A00F6112A /* BlurEffectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlurEffectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF36722C194A6F5A00F6112A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF36722D194A6F5A00F6112A /* BlurEffectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurEffectTests.swift; sourceTree = "<group>"; };
+		AF771D7D194CCA5200953EE2 /* ObjcViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjcViewController.m; sourceTree = "<group>"; };
+		AF771D7F194CCA5F00953EE2 /* ObjcViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjcViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 				AF36721E194A6F5A00F6112A /* Main.storyboard */,
 				AF367221194A6F5A00F6112A /* Images.xcassets */,
 				AF367218194A6F5A00F6112A /* Supporting Files */,
+				AF771D7D194CCA5200953EE2 /* ObjcViewController.m */,
+				AF771D7F194CCA5F00953EE2 /* ObjcViewController.h */,
 			);
 			path = BlurEffect;
 			sourceTree = "<group>";
@@ -208,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF771D7E194CCA5200953EE2 /* ObjcViewController.m in Sources */,
 				AF36721D194A6F5A00F6112A /* ViewController.swift in Sources */,
 				AF36721B194A6F5A00F6112A /* AppDelegate.swift in Sources */,
 			);
@@ -327,9 +333,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BlurEffect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -338,9 +347,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BlurEffect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -399,6 +410,7 @@
 				AF367233194A6F5A00F6112A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF367234194A6F5A00F6112A /* Build configuration list for PBXNativeTarget "BlurEffectTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +419,7 @@
 				AF367236194A6F5A00F6112A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
